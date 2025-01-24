@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <header class="bg-red-600 text-white text-center py-4">
+        <h1 class="text-3xl font-bold">Welcome to Gourmet Paradise</h1>
+    </header>
+
+    <main class="container mx-auto mt-8 px-4">
+        <!-- Alerts -->
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-4">Special Announcements</h2>
+            <div class="alert alert-success" role="alert">
+                Try our new seasonal menu today!
+            </div>
+            <div class="alert alert-danger" role="alert">
+                We are closed on Sundays. See you the next day!
+            </div>
+        </div>
+
+        <!-- Cards -->
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-4">Our Featured Dishes</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="card border shadow-md hover:shadow-lg">
+                    <img src="D:\Downloads\food1.jpg" class="card-img-top" alt="Dish 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Grilled Salmon</h5>
+                        <p class="card-text">A savory grilled salmon served with a side of fresh vegetables.</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+                <div class="card border shadow-md hover:shadow-lg">
+                    <img src="D:\Downloads\food2.jpg" class="card-img-top" alt="Dish 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Pasta Primavera</h5>
+                        <p class="card-text">Delicious pasta tossed with fresh vegetables in a creamy sauce.</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+                <div class="card border shadow-md hover:shadow-lg">
+                    <img src="D:\Downloads\food3.jpg" class="card-img-top" alt="Dish 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Classic Cheesecake</h5>
+                        <p class="card-text">Rich and creamy cheesecake with a buttery graham cracker crust.</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-4">Quick Actions</h2>
+            <button class="btn btn-warning me-2">Reserve a Table</button>
+            <button class="btn btn-success me-2">View Menu</button>
+            <button class="btn btn-danger">Contact Us</button>
+        </div>
+
+        <!-- Modals -->
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-4">Promotions</h2>
+            <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#promoModal">
+                View Offers
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="promoModal" tabindex="-1" aria-labelledby="promoModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="promoModalLabel">Special Offers</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Get 20% off on all dine-in orders this weekend!
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Forms -->
+        <div class="mb-6">
+            <h2 class="text-2xl font-semibold mb-4">Feedback</h2>
+            <form class="bg-white p-6 rounded-lg shadow-md">
+                <div class="mb-4">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" id="name" class="form-control" placeholder="Enter your name">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your email">
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="form-label">Your Feedback</label>
+                    <textarea id="message" class="form-control" rows="3" placeholder="Write your feedback"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white text-center py-4">
+        <p class="text-sm">&copy; 2024 Gourmet Paradise. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
